@@ -10,3 +10,35 @@ body {
 	font-size: 16px;
 	background-image: url(./images/bg-pattern-desktop.svg);
 }
+
+/* container styles */
+.container {
+	border: 1px solid black;
+	display: grid;
+	height: 100vh;
+	padding: 2rem 1rem;
+}
+
+header {
+	border: 1px solid red;
+}
+
+.form-container {
+	border: 1px solid blue;
+}
+
+/* attribution styles */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* desktop styles */
+/* @media only screen and (min-width: 1025px) {
+	.container {
+
+	}
+} */
