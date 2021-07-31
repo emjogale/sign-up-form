@@ -14,18 +14,53 @@ body {
 /* container styles */
 .container {
 	border: 1px solid black;
-	display: grid;
-	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	padding: 2rem 1rem;
+	background: url(./images/bg-intro-mobile.png), hsl(0, 100%, 74%);
 }
 
+/* header styles */
 header {
 	border: 1px solid red;
+	flex-grow: 1;
+	color: white;
+	text-align: center;
+	line-height: 1.5rem;
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
+h1 {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+header p {
+	font-weight: 600;
+}
+
+/* form container styles */
 .form-container {
 	border: 1px solid blue;
+	flex-grow: 1;
 }
+
+/* form styles */
+form {
+	background-color: white;
+}
+input {
+	display: block;
+	position: relative;
+}
+
+/* label {
+	position: absolute;
+} */
 
 /* attribution styles */
 .attribution {
@@ -36,9 +71,9 @@ header {
 	color: hsl(228, 45%, 44%);
 }
 
-/* desktop styles */
-/* @media only screen and (min-width: 1025px) {
+/* desktop styles  */
+@media only screen and (min-width: 1025px) {
 	.container {
-
+		flex-direction: row;
 	}
-} */
+}
