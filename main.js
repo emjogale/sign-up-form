@@ -14,7 +14,9 @@ const checkInput = (e) => {
 	e.preventDefault();
 	console.log("submit action fired");
 	inputs.forEach((input) => {
-		if (input.value === "") {
+		if (input.id === "Password") {
+			console.log("this is the password field");
+		} else if (input.value === "") {
 			console.log(`${input.id} cannot be empty`);
 		}
 	});
