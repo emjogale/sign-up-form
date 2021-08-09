@@ -110,6 +110,9 @@ h5 {
 	border-color: hsl(0, 100%, 74%);
 }
 
+input::after {
+	content: "url(./images/icon-error.svg)";
+}
 small {
 	float: right;
 	color: hsl(0, 100%, 74%);

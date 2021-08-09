@@ -14,8 +14,6 @@ const password = passwordEl.value.trim();
 // reusable utility functions
 // check if a field has been filled in
 const isFilledIn = (value) => (value === "" ? false : true);
-const word = "yes";
-console.log(isFilledIn(word));
 
 // check if an email is valid
 const isEmailValid = (email) => {
@@ -49,11 +47,21 @@ const success = (input) => {
 const checkfirstName = () => {
 	let valid = false;
 	const firstName = firstNameEl.value.trim();
-	console.log(firstName);
 	if (!isFilledIn(firstName)) {
 		showError(firstNameEl, "First Name cannot be empty");
 	} else {
 		success(firstNameEl);
+		valid = true;
+	}
+};
+
+const checkLastName = () => {
+	let valid = false;
+	const lastName = firstNameEl.value.trim();
+	if (!isFilledIn(lastName)) {
+		showError(lastNameEl, "Last Name cannot be empty");
+	} else {
+		success(lastNameEl);
 		valid = true;
 	}
 };
@@ -69,6 +77,17 @@ const checkEmail = () => {
 	}
 };
 
+const checkPassword = () => {
+	let valid = false;
+	const password = passwordEl.value.trim();
+	if (!isFilledIn(password)) {
+		showError(passwordEl, "Password cannot be empty");
+	} else {
+		success(passwordEl);
+		valid = true;
+	}
+};
+
 // attache the submit event listener to the form
 form.addEventListener("submit", function (e) {
 	// prevent the form from submitting
@@ -76,4 +95,6 @@ form.addEventListener("submit", function (e) {
 	// validate the form
 	checkEmail();
 	checkfirstName();
+	checkLastName();
+	checkPassword();
 });
