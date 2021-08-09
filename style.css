@@ -69,14 +69,14 @@ form {
 }
 .form-field {
 	margin: 1rem 0;
-	padding-top: 1rem;
+	position: relative;
 }
 input {
 	display: block;
 	position: relative;
 	width: 100%;
 	padding: 1rem 0.5rem;
-	border-radius: 10px;
+	border-radius: 8px;
 	border-width: 0.2px;
 	border-color: hsl(240, 7%, 92%);
 	margin: 1rem 0 0 0;
@@ -96,6 +96,10 @@ input {
 	font-weight: 600;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 h5 {
 	font-size: 0.7rem;
 	color: hsl(246, 25%, 77%);
@@ -110,8 +114,11 @@ h5 {
 	border-color: hsl(0, 100%, 74%);
 }
 
-input::after {
-	content: "url(./images/icon-error.svg)";
+.form-field.error::after {
+	content: url(./images/icon-error.svg);
+	position: absolute;
+	top: 1.4rem;
+	right: 0.5rem;
 }
 small {
 	float: right;
