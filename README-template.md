@@ -40,49 +40,29 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-- I used a simple grid layout with just 2 sections so that the layout could easily be changed for desktop view
+- I used a simple flex layout with just 2 sections so that the layout could easily be changed for desktop view
+- Once I had the structure and the basic styling in place I then tackled the functionality of the form validation.
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-	color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I learned that you can't use the css position property on input elements.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Javascript form tutorial](https://www.javascripttutorial.net/javascript-dom/javascript-form/) - This really helped me sort out the structure and logic of the form validation. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+<!-- - Website - [Emma Gale](https://www.your-site.com) -->
+
+- Frontend Mentor - [@emjogale](https://www.frontendmentor.io/profile/emjogale)
+- Twitter - [@emmagale2635](https://www.twitter.com/emmagale2635)
 
 ## Acknowledgments

@@ -117,8 +117,8 @@ h5 {
 .form-field.error::after {
 	content: url(./images/icon-error.svg);
 	position: absolute;
-	top: 1.4rem;
-	right: 0.5rem;
+	top: 1.2rem;
+	right: 0.75rem;
 }
 small {
 	float: right;
@@ -148,14 +148,18 @@ small {
 		max-width: 50%;
 		justify-content: center;
 		margin: 0 2rem;
-		padding: 0 10%;
+		padding: 0 8%;
 		text-align: left;
 		margin-bottom: 5rem;
 	}
 
 	h1 {
-		font-size: 2rem;
+		font-size: 3rem;
 		line-height: 1.2;
+	}
+
+	header p {
+		font-size: 1rem;
 	}
 
 	.form-container {
