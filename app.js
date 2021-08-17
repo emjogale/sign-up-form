@@ -90,6 +90,7 @@ const checkPassword = () => {
 
 // attache the submit event listener to the form
 form.addEventListener("submit", function (e) {
+	console.log("trying to validate form");
 	// prevent the form from submitting
 	e.preventDefault();
 	// validate the form
