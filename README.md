@@ -13,7 +13,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -27,16 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![./screenshot.jpg](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/emjogale/sign-up-form](https://github.com/emjogale/sign-up-form)
+- Live Site URL: [https://sign-up-form-gilt.vercel.app/](https://sign-up-form-gilt.vercel.app/)
 
 ## My process
 
@@ -53,6 +48,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### What I learned
 
 I learned that you can't use the css position property on input elements.
+I also learnt that a good README should be written alongside the development process - rather than after - something I will try to implement better next time!
 
 ### Useful resources
 
@@ -64,5 +60,3 @@ I learned that you can't use the css position property on input elements.
 
 - Frontend Mentor - [@emjogale](https://www.frontendmentor.io/profile/emjogale)
 - Twitter - [@emmagale2635](https://www.twitter.com/emmagale2635)
-
-## Acknowledgments
