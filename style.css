@@ -24,7 +24,7 @@ body {
 
 /* header styles */
 header {
-	flex-grow: 1;
+	font-weight: 700;
 	color: white;
 	text-align: center;
 	line-height: 1.5rem;
@@ -150,7 +150,7 @@ small {
 		margin: 0 2rem;
 		padding: 0 8%;
 		text-align: left;
-		margin-bottom: 5rem;
+		/* margin-bottom: 5rem; */
 	}
 
 	h1 {
@@ -166,7 +166,7 @@ small {
 		margin: 2rem 3rem;
 		display: flex;
 		flex-direction: column;
-		justify-content: stretch;
+		justify-content: center;
 	}
 
 	h2 {
