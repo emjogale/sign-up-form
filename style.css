@@ -147,7 +147,7 @@ small {
 	header {
 		max-width: 50%;
 		justify-content: center;
-		margin: 0 2rem;
+		margin: 0 1rem 0 2rem;
 		padding: 0 6% 0 8%;
 		text-align: left;
 	}
@@ -162,7 +162,7 @@ small {
 	}
 
 	.form-container {
-		margin: 1.5rem 2.5rem;
+		margin: 1rem 3rem 2rem 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
