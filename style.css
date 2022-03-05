@@ -148,9 +148,8 @@ small {
 		max-width: 50%;
 		justify-content: center;
 		margin: 0 2rem;
-		padding: 0 8%;
+		padding: 0 6% 0 8%;
 		text-align: left;
-		/* margin-bottom: 5rem; */
 	}
 
 	h1 {
@@ -163,7 +162,7 @@ small {
 	}
 
 	.form-container {
-		margin: 2rem 3rem;
+		margin: 1.5rem 2.5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
