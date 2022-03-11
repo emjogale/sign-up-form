@@ -10,7 +10,7 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5rem;
-	background-image: url(./images/bg-pattern-desktop.svg);
+	background-image: url(./images/bg-pattern-mobile.svg);
 }
 
 /* container styles */
@@ -36,7 +36,7 @@ header {
 
 h1 {
 	font-size: 1.6rem;
-	font-weight: 600;
+	font-weight: 800;
 }
 
 header p {
@@ -138,6 +138,9 @@ small {
 
 /* desktop styles  */
 @media only screen and (min-width: 1025px) {
+	body {
+		background-image: url(./images/bg-pattern-desktop.svg);
+	}
 	.container {
 		border: 1px solid black;
 		flex-direction: row;
@@ -153,7 +156,6 @@ small {
 	}
 
 	h1 {
-		font-weight: 800;
 		font-size: 3rem;
 		line-height: 1.2;
 	}
