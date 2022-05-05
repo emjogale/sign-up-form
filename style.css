@@ -5,6 +5,8 @@
 	--accent-blue: hsl(248, 32%, 49%);
 	--neutral-dark-blue: hsla(249, 10%, 26%, 1);
 	--neutral-greyish-blue: hsla(246, 25%, 77%);
+
+	--box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* reset styles */ /* Box sizing rules */
@@ -155,6 +157,7 @@ header p {
 	background-color: var(--accent-blue);
 	padding: 1rem 4rem;
 	border-radius: 10px;
+	box-shadow: var(--box-shadow);
 }
 
 form {
@@ -162,7 +165,7 @@ form {
 	padding: 1.5rem;
 	margin-top: 1rem;
 	border-radius: 10px;
-	box-shadow: 0px 10px 5px 0px hsl(0, 44%, 48%);
+	box-shadow: var(--box-shadow);
 }
 .form-field {
 	padding-bottom: 1.25rem;
@@ -171,31 +174,35 @@ form {
 }
 input {
 	display: block;
-	position: relative;
 	width: 100%;
 	padding: 1rem;
-	border-radius: 8px;
+	border-radius: 5px;
 	border-width: 0.2px;
-	border-color: hsl(240, 7%, 92%);
-
-	font-family: "Poppins", sans-serif;
+	border: 1px solid #dedede;
 	font-weight: 600;
+}
+
+input:focus {
+	outline: 0;
+	border-color: #777;
 }
 
 ::placeholder {
 	color: var(--neutral-dark-blue);
+	font-size: 0.9rem;
 }
 
 .cta {
 	width: 100%;
 	padding: 1rem;
-
-	background-color: hsl(154, 59%, 51%);
 	color: white;
+	background-color: var(--primary-green);
+	border: 2px solid var(--primary-green);
 	border-radius: 5px;
 	font-family: "Poppins", sans-serif;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	font-weight: 600;
+	box-shadow: var(--box-shadow);
 }
 
 button:hover {
@@ -211,10 +218,6 @@ h3.terms {
 	line-height: 1.9;
 }
 
-.red {
-	color: hsl(0, 100%, 74%);
-	font-weight: 700;
-}
 .form-field.error input {
 	border-color: hsl(0, 100%, 74%);
 }
@@ -241,17 +244,21 @@ h3.terms {
 	margin-bottom: 1rem;
 }
 
+.terms span {
+	color: var(--primary-red);
+}
+
 /* attribution styles */
 .attribution {
 	font-size: 11px;
 	text-align: center;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--accent-blue);
 }
 
 /* desktop styles  */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 900px) {
 	body {
 		background-image: url(./images/bg-pattern-desktop.svg);
 	}
