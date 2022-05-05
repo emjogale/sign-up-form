@@ -3,7 +3,7 @@
 	--primary-red: hsl(0, 100%, 74%);
 	--primary-green: hsl(154, 59%, 51%);
 	--accent-blue: hsl(248, 32%, 49%);
-	--neutral-dark-blue: hsl(249, 10%, 26%);
+	--neutral-dark-blue: hsla(249, 10%, 26%, 1);
 	--neutral-greyish-blue: hsla(246, 25%, 77%);
 }
 
@@ -95,6 +95,8 @@ select {
 	height: 1px;
 	overflow: hidden;
 }
+
+/* general styles  */
 body {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
@@ -103,34 +105,42 @@ body {
 	background-image: url(./images/bg-pattern-mobile.svg);
 }
 
+.flow > * + * {
+	margin-top: 1em;
+}
+
+.semi-bold {
+	font-size: 500;
+}
+
 /* container styles */
 .container {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	padding: 2rem 1rem;
-	background: url(./images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+	padding: 4.25rem 1.5rem;
+	background: url(./images/bg-intro-mobile.png), var(--primary-red);
 }
 
 /* header styles */
 header {
-	font-weight: 700;
+	font-weight: 500;
 	color: white;
 	text-align: center;
-	line-height: 1.5;
-	padding: 2rem 1rem;
+	line-height: 1.625;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-bottom: 4rem;
 }
 
 h1 {
-	font-size: 1.6rem;
-	font-weight: 800;
+	font-size: 1.75rem;
+	font-weight: 700;
+	line-height: 1.25;
 }
 
 header p {
-	font-weight: 600;
 	margin-top: 1rem;
 }
 
@@ -142,48 +152,49 @@ header p {
 
 .form-container h2 {
 	color: white;
-	background-color: hsl(248, 32%, 49%);
-	padding: 1rem 2rem;
+	background-color: var(--accent-blue);
+	padding: 1rem 4rem;
 	border-radius: 10px;
-	box-shadow: 0px 10px 5px 0px hsl(0, 49%, 55%);
 }
-.bold {
-	font-weight: 600;
-}
+
 form {
 	background-color: white;
-	padding: 2rem;
+	padding: 1.5rem;
 	margin-top: 1rem;
 	border-radius: 10px;
 	box-shadow: 0px 10px 5px 0px hsl(0, 44%, 48%);
 }
 .form-field {
-	margin: 1rem;
-	padding-bottom: 1.5rem;
+	padding-bottom: 1.25rem;
 	position: relative;
+	color: var(--accent-blue);
 }
 input {
 	display: block;
 	position: relative;
 	width: 100%;
-	padding: 1rem 0.5rem;
+	padding: 1rem;
 	border-radius: 8px;
 	border-width: 0.2px;
 	border-color: hsl(240, 7%, 92%);
-	margin: 1rem 0 0 0;
+
 	font-family: "Poppins", sans-serif;
-	font-weight: 700;
+	font-weight: 600;
+}
+
+::placeholder {
+	color: var(--neutral-dark-blue);
 }
 
 .cta {
 	width: 100%;
 	padding: 1rem;
-	margin-top: 1rem;
+
 	background-color: hsl(154, 59%, 51%);
 	color: white;
 	border-radius: 5px;
 	font-family: "Poppins", sans-serif;
-	font-size: 0.8 rem;
+	font-size: 0.8rem;
 	font-weight: 600;
 }
 
@@ -191,10 +202,13 @@ button:hover {
 	cursor: pointer;
 }
 
-h3 {
+h3.terms {
 	font-size: 0.7rem;
 	color: hsl(246, 25%, 77%);
 	margin-top: 1rem;
+	padding: 0 1rem;
+	font-size: 0.7;
+	line-height: 1.9;
 }
 
 .red {
@@ -214,16 +228,17 @@ h3 {
 .form-field small {
 	float: right;
 	color: hsl(0, 100%, 74%);
-	font-size: 0.75rem;
+	font-size: 0.7rem;
 	font-style: italic;
-	position: absolute;
+	display: relative;
 	bottom: 0;
 	right: 0;
-	visibility: hidden;
+	display: none;
 }
 
 .form-field.error small {
-	visibility: visible;
+	display: block;
+	margin-bottom: 1rem;
 }
 
 /* attribution styles */
