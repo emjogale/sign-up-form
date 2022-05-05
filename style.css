@@ -265,7 +265,7 @@ h3.terms {
 	.container {
 		border: 1px solid black;
 		flex-direction: row;
-		padding-right: 5rem;
+		padding-right: 4rem;
 		background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
 	}
 	header {
