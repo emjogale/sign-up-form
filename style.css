@@ -265,13 +265,12 @@ h3.terms {
 	.container {
 		border: 1px solid black;
 		flex-direction: row;
-		padding-right: 4rem;
+		padding: 0 2rem;
 		background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
 	}
 	header {
 		max-width: 50%;
 		justify-content: center;
-		margin: 0 1rem 0 2rem;
 		padding: 0 4% 0 8%;
 		text-align: left;
 	}
