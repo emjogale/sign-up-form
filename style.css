@@ -286,7 +286,7 @@ h3.terms {
 	}
 
 	.form-container {
-		flex-grow: 1;
+		/* flex-grow: 1; */
 		max-width: 33.75rem;
 		display: flex;
 		flex-direction: column;
