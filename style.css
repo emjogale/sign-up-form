@@ -265,14 +265,13 @@ h3.terms {
 	.container {
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
-		padding: 0;
+		justify-content: space-around;
+		padding: 7.5rem;
 		background: url(./images/bg-intro-desktop.png), hsl(0, 100%, 74%);
 	}
 	header {
-		max-width: 32.8rem;
 		justify-content: center;
-		padding: 0 4% 0 8%;
+		max-width: 50%;
 		text-align: left;
 		margin-bottom: 0;
 	}
@@ -287,6 +286,7 @@ h3.terms {
 	}
 
 	.form-container {
+		flex-grow: 1;
 		max-width: 33.75rem;
 		display: flex;
 		flex-direction: column;
